@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 46rem;
+  left: calc(50% - 46rem / 2);
+  margin-top: 5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.created {
+  color: var(--blue-300);
+}
+
+.completed {
+  color: var(--purple-300);
+} 
+
+.created > span, .completed > span {
+  margin-left: 0.5rem;
+  background-color: var(--grey-400);
+  color: var(--grey-100);
+  font-size: 0.725rem;
+  padding: 2px 8px;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.divider {
+  margin-top: 2rem;
+  border-color: var(--grey-400);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  color: var(--grey-300);
+  line-height: 1.5rem;
+}
+
+.empty > svg {
+  margin-bottom: 1rem;
+}
